@@ -1,13 +1,11 @@
 import SwiftUI
 import wizardTestCommon
 
-func greet() -> String {
-    return Greeting().greeting()
-}
-
 struct ContentView: View {
+    let greet = Greeting().greeting()
+    
     var body: some View {
-        Text(greet())
+        Text(greet)
     }
 }
 
